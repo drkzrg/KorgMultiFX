@@ -1,1 +1,1 @@
-Basic waveshaping effect for Korg Minilogue-XD.
+Multi FX modulator effect for Korg Minilogue-XD.

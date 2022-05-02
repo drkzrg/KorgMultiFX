@@ -2,11 +2,11 @@
 # Project Customization
 # #############################################################################
 
-PROJECT = waveshaper
+PROJECT = multifx
 
 UCSRC =
 
-UCXXSRC = ./src/waveshaper.cpp
+UCXXSRC = ./src/multifx.cpp
 
 UINCDIR =
 
