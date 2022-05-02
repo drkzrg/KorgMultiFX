@@ -32,22 +32,20 @@ void MODFX_PROCESS(const float *xn, float *yn,
   // For double frames (AKA samples cause each frame = sample pair)
   for (int i=0;i<frames*2;i++)
   {
-    float xn_cur = *xn++;
-
-    // Waveshaping algorithm // 
-    base_main = (xn_cur * ((fxamt * 10.0f) + 1.f));
     switch(type)
     {
       case 0:
-        *yn++ = base_main;  
+        *yn++ = *xn++;  
         break;
       case 1:
-        *yn++ = base_main;        
+        *yn++ = *xn++;        
         break;
       case 2:
-        *yn++ = base_main;
+        *yn++ = *xn++;
         break;
+      // Waveshaping algorithm // 
       case 3:
+        base_main = *xn++ * ((fxamt * 10.0f) + 1.f);
         *yn++ = waveshape(base_main);
         break;
     }
@@ -68,19 +66,19 @@ void MODFX_PARAM(uint8_t index, int32_t value)
     case 1:
       if (valf < 0.25) 
       {
-        type = 0; //Soft
+        type = 0;
       } 
       else if (valf < 0.5) 
       {
-        type = 1; //Hard
+        type = 1; 
       } 
       else if (valf < 0.75) 
       {
-        type = 2; //Wrap
+        type = 2; 
       } 
       else 
       {
-        type = 3; //..
+        type = 3; // Waveshaper
       }
       break;
     default:
