@@ -17,8 +17,8 @@ float __fast_inline waveshape(float in)
 }
 
 // Simple bit reduction algorithm //
-// x' = -1,           {x = -1}
-// x' = roundup(bit)
+// x' = -1,                                                           {x = -1}
+// x' = roundup(bits * input) * ( 1 / bits) <-- Reciprorocal          { Else }
 float __fast_inline bitreduc(float in, float bits)
 {
   bits = fasterpow2f(bits - 1.0f);
