@@ -6,6 +6,7 @@
 // Initializing Params //
 static float fxamt = 0.5f;
 static int type = 01.f;
+static int bit_rate = 16;
 
 // Simple waveshaping algorithm //
 // x' = 3/2x - 1/2(x^3)
@@ -13,6 +14,15 @@ static int type = 01.f;
 float __fast_inline waveshape(float in) 
 {
     return 1.5f * in - 0.5f * in *in * in;
+}
+
+// Simple bit reduction algorithm //
+// x' = -1,           {x = -1}
+// x' = roundup(bit)
+float __fast_inline bitreduc(float in, float bits)
+{
+  bits = fasterpow2f(bits - 1.0f);
+  return in == -1? -1 : ceil(bits * in) * (1 / bits);
 }
 
 // Initializing Platform //
@@ -34,8 +44,9 @@ void MODFX_PROCESS(const float *xn, float *yn,
   {
     switch(type)
     {
+      // Bit Crushing Algorithm //
       case 0:
-        *yn++ = *xn++;  
+        *yn++ = bitreduc(*xn++, bit_rate); 
         break;
       case 1:
         *yn++ = *xn++;        
@@ -62,7 +73,25 @@ void MODFX_PARAM(uint8_t index, int32_t value)
   {
     case 0:
       fxamt = valf;
+
+      if (valf < 0.25) 
+      {
+        bit_rate = 8;
+      } 
+      else if (valf < 0.5) 
+      {
+        bit_rate = 16;
+      } 
+      else if (valf < 0.75) 
+      {
+        bit_rate = 32;
+      } 
+      else 
+      {
+        bit_rate = 64;
+      }
       break;
+
     case 1:
       if (valf < 0.25) 
       {

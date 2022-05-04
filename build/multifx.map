@@ -1,3 +1,15 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
+                              ./build/obj/multifx.o (ceil)
+c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+                              c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o) (__aeabi_dadd)
+c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+                              ./build/obj/multifx.o (__aeabi_dmul)
+c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+                              c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o) (__aeabi_dcmpgt)
+c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_truncdfsf2.o)
+                              ./build/obj/multifx.o (__aeabi_d2f)
 
 Memory Configuration
 
@@ -27,7 +39,7 @@ LOAD ./build/obj/multifx.o
                 0x20017840                . = ALIGN (0x4)
                 0x20017840                PROVIDE (__init_array_end, .)
 
-.text           0x20017840      0x120
+.text           0x20017840      0xc74
                 0x20017840                . = ALIGN (0x4)
                 0x20017840                _text_start = .
  *(.text)
@@ -35,88 +47,142 @@ LOAD ./build/obj/multifx.o
                 0x20017842                _hook_resume
                 0x20017846                _hook_suspend
                 0x2001784a                _entry
- .text          0x2001789c       0xc4 ./build/obj/multifx.o
+ .text          0x2001789c      0x1b4 ./build/obj/multifx.o
                 0x2001789c                _hook_init
                 0x2001789e                _hook_process
-                0x20017904                _hook_param
+                0x200179b8                _hook_param
+ .text          0x20017a50        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
+ .text          0x20017a50      0x370 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+                0x20017a50                __aeabi_drsub
+                0x20017a58                __aeabi_dsub
+                0x20017a58                __subdf3
+                0x20017a5c                __aeabi_dadd
+                0x20017a5c                __adddf3
+                0x20017cd4                __floatunsidf
+                0x20017cd4                __aeabi_ui2d
+                0x20017cf4                __floatsidf
+                0x20017cf4                __aeabi_i2d
+                0x20017d18                __aeabi_f2d
+                0x20017d18                __extendsfdf2
+                0x20017d54                __floatundidf
+                0x20017d54                __aeabi_ul2d
+                0x20017d64                __floatdidf
+                0x20017d64                __aeabi_l2d
+ .text          0x20017dc0      0x424 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+                0x20017dc0                __aeabi_dmul
+                0x20017dc0                __muldf3
+                0x20018014                __divdf3
+                0x20018014                __aeabi_ddiv
+ .text          0x200181e4      0x110 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+                0x200181e4                __gtdf2
+                0x200181e4                __gedf2
+                0x200181ec                __ltdf2
+                0x200181ec                __ledf2
+                0x200181f4                __nedf2
+                0x200181f4                __eqdf2
+                0x200181f4                __cmpdf2
+                0x20018270                __aeabi_cdrcmple
+                0x20018280                __aeabi_cdcmpeq
+                0x20018280                __aeabi_cdcmple
+                0x20018290                __aeabi_dcmpeq
+                0x200182a4                __aeabi_dcmplt
+                0x200182b8                __aeabi_dcmple
+                0x200182cc                __aeabi_dcmpge
+                0x200182e0                __aeabi_dcmpgt
+ .text          0x200182f4       0xa0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_truncdfsf2.o)
+                0x200182f4                __truncdfsf2
+                0x200182f4                __aeabi_d2f
  *(.text.*)
+ .text.ceil     0x20018394      0x120 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
+                0x20018394                ceil
  *(.glue_7)
- .glue_7        0x20017960        0x0 linker stubs
+ .glue_7        0x200184b4        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x20017960        0x0 linker stubs
+ .glue_7t       0x200184b4        0x0 linker stubs
  *(.gcc*)
-                0x20017960                . = ALIGN (0x4)
-                0x20017960                _text_end = .
+                0x200184b4                . = ALIGN (0x4)
+                0x200184b4                _text_end = .
 
-.vfp11_veneer   0x20017960        0x0
- .vfp11_veneer  0x20017960        0x0 linker stubs
+.vfp11_veneer   0x200184b4        0x0
+ .vfp11_veneer  0x200184b4        0x0 linker stubs
 
-.v4_bx          0x20017960        0x0
- .v4_bx         0x20017960        0x0 linker stubs
+.v4_bx          0x200184b4        0x0
+ .v4_bx         0x200184b4        0x0 linker stubs
 
-.iplt           0x20017960        0x0
- .iplt          0x20017960        0x0 ./build/obj/_unit.o
+.iplt           0x200184b4        0x0
+ .iplt          0x200184b4        0x0 ./build/obj/_unit.o
 
-.rel.dyn        0x20017960        0x0
- .rel.iplt      0x20017960        0x0 ./build/obj/_unit.o
+.rel.dyn        0x200184b4        0x0
+ .rel.iplt      0x200184b4        0x0 ./build/obj/_unit.o
 
-.rodata         0x20017960        0x0
-                0x20017960                . = ALIGN (0x4)
-                0x20017960                _rodata_start = .
+.rodata         0x200184b4        0x0
+                0x200184b4                . = ALIGN (0x4)
+                0x200184b4                _rodata_start = .
  *(.rodata)
  *(.rodata.*)
-                0x20017960                . = ALIGN (0x4)
-                0x20017960                _rodata_end = .
+                0x200184b4                . = ALIGN (0x4)
+                0x200184b4                _rodata_end = .
 
-.data           0x20017960        0x8
-                0x20017960                . = ALIGN (0x8)
-                0x20017960                _data_start = .
+.data           0x200184b8       0x10
+                0x200184b8                . = ALIGN (0x8)
+                0x200184b8                _data_start = .
  *(.data)
- .data          0x20017960        0x0 ./build/obj/_unit.o
- .data          0x20017960        0x8 ./build/obj/multifx.o
+ .data          0x200184b8        0x0 ./build/obj/_unit.o
+ .data          0x200184b8        0xc ./build/obj/multifx.o
+ *fill*         0x200184c4        0x4 
+ .data          0x200184c8        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
+ .data          0x200184c8        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+ .data          0x200184c8        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+ .data          0x200184c8        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+ .data          0x200184c8        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_truncdfsf2.o)
  *(.data.*)
-                0x20017968                . = ALIGN (0x8)
-                0x20017968                _data_end = .
+                0x200184c8                . = ALIGN (0x8)
+                0x200184c8                _data_end = .
 
-.igot.plt       0x20017968        0x0
- .igot.plt      0x20017968        0x0 ./build/obj/_unit.o
+.igot.plt       0x200184c8        0x0
+ .igot.plt      0x200184c8        0x0 ./build/obj/_unit.o
 
-.bss            0x20017968        0x0
-                0x20017968                . = ALIGN (0x4)
-                0x20017968                _bss_start = .
+.bss            0x200184c8        0x0
+                0x200184c8                . = ALIGN (0x4)
+                0x200184c8                _bss_start = .
  *(.bss)
- .bss           0x20017968        0x0 ./build/obj/_unit.o
- .bss           0x20017968        0x0 ./build/obj/multifx.o
+ .bss           0x200184c8        0x0 ./build/obj/_unit.o
+ .bss           0x200184c8        0x0 ./build/obj/multifx.o
+ .bss           0x200184c8        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
+ .bss           0x200184c8        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x200184c8        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x200184c8        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+ .bss           0x200184c8        0x0 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_truncdfsf2.o)
  *(.bss.*)
  *(COMMON)
-                0x20017968                . = ALIGN (0x4)
-                0x20017968                _bss_end = .
+                0x200184c8                . = ALIGN (0x4)
+                0x200184c8                _bss_end = .
 
-.ARM.extab      0x20017968        0x0
-                0x20017968                . = ALIGN (0x4)
-                0x20017968                __extab_start = .
+.ARM.extab      0x200184c8        0x0
+                0x200184c8                . = ALIGN (0x4)
+                0x200184c8                __extab_start = .
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x20017968                . = ALIGN (0x4)
-                0x20017968                __extab_end = .
+                0x200184c8                . = ALIGN (0x4)
+                0x200184c8                __extab_end = .
 
-.ARM.exidx      0x20017968        0x0
-                0x20017968                __exidx_start = .
+.ARM.exidx      0x200184c8        0x0
+                0x200184c8                __exidx_start = .
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x20017968                __exidx_end = .
+                0x200184c8                __exidx_end = .
 
-.eh_frame_hdr   0x20017968        0x0
-                0x20017968                . = ALIGN (0x4)
-                0x20017968                _eh_frame_hdr_start = .
+.eh_frame_hdr   0x200184c8        0x0
+                0x200184c8                . = ALIGN (0x4)
+                0x200184c8                _eh_frame_hdr_start = .
  *(.eh_frame_hdr)
-                0x20017968                . = ALIGN (0x4)
-                0x20017968                _eh_frame_hdr_end = .
+                0x200184c8                . = ALIGN (0x4)
+                0x200184c8                _eh_frame_hdr_end = .
 
-.eh_frame       0x20017968        0x0
-                0x20017968                . = ALIGN (0x4)
-                0x20017968                _eh_frame_start = .
+.eh_frame       0x200184c8        0x0
+                0x200184c8                . = ALIGN (0x4)
+                0x200184c8                _eh_frame_start = .
  *(.eh_frame)
-                0x20017968                . = ALIGN (0x4)
-                0x20017968                _eh_frame_end = .
+                0x200184c8                . = ALIGN (0x4)
+                0x200184c8                _eh_frame_end = .
 
 .sdram          0xc0400000        0x0
                 0xc0400000                . = ALIGN (0x4)
@@ -148,17 +214,17 @@ LOAD c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-non
 END GROUP
 OUTPUT(build/multifx.elf elf32-littlearm)
 
-.debug_info     0x00000000      0x876
+.debug_info     0x00000000      0x9b3
  .debug_info    0x00000000      0x55d ./build/obj/_unit.o
- .debug_info    0x0000055d      0x319 ./build/obj/multifx.o
+ .debug_info    0x0000055d      0x456 ./build/obj/multifx.o
 
-.debug_abbrev   0x00000000      0x33d
+.debug_abbrev   0x00000000      0x44c
  .debug_abbrev  0x00000000      0x1f4 ./build/obj/_unit.o
- .debug_abbrev  0x000001f4      0x149 ./build/obj/multifx.o
+ .debug_abbrev  0x000001f4      0x258 ./build/obj/multifx.o
 
-.debug_loc      0x00000000      0x1cf
+.debug_loc      0x00000000      0x209
  .debug_loc     0x00000000       0xb9 ./build/obj/_unit.o
- .debug_loc     0x000000b9      0x116 ./build/obj/multifx.o
+ .debug_loc     0x000000b9      0x150 ./build/obj/multifx.o
 
 .debug_aranges  0x00000000       0x40
  .debug_aranges
@@ -166,15 +232,15 @@ OUTPUT(build/multifx.elf elf32-littlearm)
  .debug_aranges
                 0x00000020       0x20 ./build/obj/multifx.o
 
-.debug_line     0x00000000      0x3d0
+.debug_line     0x00000000      0x49d
  .debug_line    0x00000000      0x22c ./build/obj/_unit.o
- .debug_line    0x0000022c      0x1a4 ./build/obj/multifx.o
+ .debug_line    0x0000022c      0x271 ./build/obj/multifx.o
 
-.debug_str      0x00000000      0x6ea
+.debug_str      0x00000000      0x711
  .debug_str     0x00000000      0x565 ./build/obj/_unit.o
                                 0x5d8 (size before relaxing)
- .debug_str     0x00000565      0x185 ./build/obj/multifx.o
-                                0x3f4 (size before relaxing)
+ .debug_str     0x00000565      0x1ac ./build/obj/multifx.o
+                                0x41b (size before relaxing)
 
 .comment        0x00000000       0x6e
  .comment       0x00000000       0x6e ./build/obj/_unit.o
@@ -187,19 +253,71 @@ OUTPUT(build/multifx.elf elf32-littlearm)
                 0x00000000       0x39 ./build/obj/_unit.o
  .ARM.attributes
                 0x00000039       0x39 ./build/obj/multifx.o
+ .ARM.attributes
+                0x00000072       0x34 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
+ .ARM.attributes
+                0x000000a6       0x22 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x000000c8       0x22 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x000000ea       0x22 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+ .ARM.attributes
+                0x0000010c       0x22 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_truncdfsf2.o)
 
-.debug_frame    0x00000000       0xd4
+.debug_frame    0x00000000      0x174
  .debug_frame   0x00000000       0x88 ./build/obj/_unit.o
- .debug_frame   0x00000088       0x4c ./build/obj/multifx.o
+ .debug_frame   0x00000088       0xbc ./build/obj/multifx.o
+ .debug_frame   0x00000144       0x30 c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
 
-.debug_ranges   0x00000000       0x40
- .debug_ranges  0x00000000       0x40 ./build/obj/multifx.o
+.debug_ranges   0x00000000       0x58
+ .debug_ranges  0x00000000       0x58 ./build/obj/multifx.o
 
 Cross Reference Table
 
 Symbol                                            File
+__adddf3                                          c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__aeabi_cdcmpeq                                   c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__aeabi_cdcmple                                   c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__aeabi_cdrcmple                                  c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__aeabi_d2f                                       c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_truncdfsf2.o)
+                                                  ./build/obj/multifx.o
+__aeabi_dadd                                      c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+                                                  c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
+__aeabi_dcmpeq                                    c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__aeabi_dcmpge                                    c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__aeabi_dcmpgt                                    c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+                                                  c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
+__aeabi_dcmple                                    c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__aeabi_dcmplt                                    c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__aeabi_ddiv                                      c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+__aeabi_dmul                                      c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+                                                  ./build/obj/multifx.o
+__aeabi_drsub                                     c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__aeabi_dsub                                      c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__aeabi_f2d                                       c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+                                                  ./build/obj/multifx.o
+__aeabi_i2d                                       c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__aeabi_l2d                                       c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ui2d                                      c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__aeabi_ul2d                                      c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__cmpdf2                                          c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__divdf3                                          c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+__eqdf2                                           c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__extendsfdf2                                     c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__floatdidf                                       c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__floatsidf                                       c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__floatundidf                                     c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__floatunsidf                                     c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__gedf2                                           c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__gtdf2                                           c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
 __init_array_end                                  ./build/obj/_unit.o
 __init_array_start                                ./build/obj/_unit.o
+__ledf2                                           c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__ltdf2                                           c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__muldf3                                          c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_muldivdf3.o)
+__nedf2                                           c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_cmpdf2.o)
+__subdf3                                          c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_addsubdf3.o)
+__truncdfsf2                                      c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/fpu\libgcc.a(_arm_truncdfsf2.o)
 _bss_end                                          ./build/obj/_unit.o
 _bss_start                                        ./build/obj/_unit.o
 _entry                                            ./build/obj/_unit.o
@@ -211,3 +329,5 @@ _hook_process                                     ./build/obj/multifx.o
                                                   ./build/obj/_unit.o
 _hook_resume                                      ./build/obj/_unit.o
 _hook_suspend                                     ./build/obj/_unit.o
+ceil                                              c:/users/bradl/desktop/code projects/korgfx/logue-sdk/tools/gcc/gcc-arm-none-eabi-5_4-2016q3/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/fpu\libm.a(lib_a-s_ceil.o)
+                                                  ./build/obj/multifx.o
